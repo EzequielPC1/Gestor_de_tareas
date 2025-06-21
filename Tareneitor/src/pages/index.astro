@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/Layout.astro';
+---
+<BaseLayout title="Test TailwindCSS">
+  <div class="border p-4 m-4">
+    <p class="text-blue-600">Este bloque tiene borde y padding: Tailwind está funcionando ✅</p>
+  </div>
+
+  <div class="line p-4 m-4">
+    <p class="text-red-600">Esta clase "line" no existe en Tailwind, así que si no ves cambios → ¡es una buena señal!</p>
+  </div>
+</BaseLayout>
