@@ -1,0 +1,52 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Usuario simple para la tarea (opcional, por si después agregás auth)
+model User {
+  id        String              @id @default(cuid())
+  name      String?
+  email     String?             @unique
+  createdAt DateTime            @default(now())
+  readingList ReadingListItem[]
+  finishedBooks FinishedBook[]
+}
+
+enum Priority {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+// Libros que el usuario quiere leer
+model ReadingListItem {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  bookId    String
+  priority  Priority @default(MEDIUM)
+  notes     String?
+  createdAt DateTime @default(now())
+
+  @@unique([userId, bookId])
+}
+
+// Libros ya leídos
+model FinishedBook {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id])
+  bookId       String
+  rating       Int?
+  review       String?
+  dateFinished DateTime @default(now())
+  pages        Int?
+  genre        String?
+  author       String?
+}

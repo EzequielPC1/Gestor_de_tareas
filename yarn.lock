@@ -2,6 +2,49 @@
 # yarn lockfile v1
 
 
+"@ai-sdk/gateway@2.0.17":
+  version "2.0.17"
+  resolved "https://registry.npmjs.org/@ai-sdk/gateway/-/gateway-2.0.17.tgz"
+  integrity sha512-oVAG6q72KsjKlrYdLhWjRO7rcqAR8CjokAbYuyVZoCO4Uh2PH/VzZoxZav71w2ipwlXhHCNaInGYWNs889MMDA==
+  dependencies:
+    "@ai-sdk/provider" "2.0.0"
+    "@ai-sdk/provider-utils" "3.0.18"
+    "@vercel/oidc" "3.0.5"
+
+"@ai-sdk/openai@^2.0.75":
+  version "2.0.75"
+  resolved "https://registry.npmjs.org/@ai-sdk/openai/-/openai-2.0.75.tgz"
+  integrity sha512-ThDHg1+Jes7S0AOXa01EyLBSzZiZwzB5do9vAlufNkoiRHGTH1BmoShrCyci/TUsg4ky1HwbK4hPK+Z0isiE6g==
+  dependencies:
+    "@ai-sdk/provider" "2.0.0"
+    "@ai-sdk/provider-utils" "3.0.18"
+
+"@ai-sdk/provider-utils@3.0.18":
+  version "3.0.18"
+  resolved "https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-3.0.18.tgz"
+  integrity sha512-ypv1xXMsgGcNKUP+hglKqtdDuMg68nWHucPPAhIENrbFAI+xCHiqPVN8Zllxyv1TNZwGWUghPxJXU+Mqps0YRQ==
+  dependencies:
+    "@ai-sdk/provider" "2.0.0"
+    "@standard-schema/spec" "^1.0.0"
+    eventsource-parser "^3.0.6"
+
+"@ai-sdk/provider@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@ai-sdk/provider/-/provider-2.0.0.tgz"
+  integrity sha512-6o7Y2SeO9vFKB8lArHXehNuusnpddKPk7xqL7T2/b+OvXMRIXUO1rR4wcv1hAFUAT9avGZshty3Wlua/XA7TvA==
+  dependencies:
+    json-schema "^0.4.0"
+
+"@opentelemetry/api@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/@opentelemetry/api/-/api-1.9.0.tgz"
+  integrity sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg==
+
+"@standard-schema/spec@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@standard-schema/spec/-/spec-1.0.0.tgz"
+  integrity sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==
+
 "@types/sqlstring@^2.3.2":
   version "2.3.2"
   resolved "https://registry.npmjs.org/@types/sqlstring/-/sqlstring-2.3.2.tgz"
@@ -12,6 +55,31 @@
   resolved "https://registry.npmjs.org/@types/validator/-/validator-13.15.1.tgz"
   integrity sha512-9gG6ogYcoI2mCMLdcO0NYI0AYrbxIjv0MDmy/5Ywo6CpWWrqYayc+mmgxRsCgtcGJm9BSbXkMsmxGah1iGHAAQ==
 
+"@vercel/oidc@3.0.5":
+  version "3.0.5"
+  resolved "https://registry.npmjs.org/@vercel/oidc/-/oidc-3.0.5.tgz"
+  integrity sha512-fnYhv671l+eTTp48gB4zEsTW/YtRgRPnkI2nT7x6qw5rkI1Lq2hTmQIpHPgyThI0znLK+vX2n9XxKdXZ7BUbbw==
+
+ai@^5.0.105:
+  version "5.0.105"
+  resolved "https://registry.npmjs.org/ai/-/ai-5.0.105.tgz"
+  integrity sha512-waQZAvv44KYzys6S3l25ti2jcSuJnkyWFTliSKy3swASL6w6ttPxJTm80d+v9sLWoIxrqE3OwhTJbweNp065fg==
+  dependencies:
+    "@ai-sdk/gateway" "2.0.17"
+    "@ai-sdk/provider" "2.0.0"
+    "@ai-sdk/provider-utils" "3.0.18"
+    "@opentelemetry/api" "1.9.0"
+
+eventsource-parser@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/eventsource-parser/-/eventsource-parser-3.0.6.tgz"
+  integrity sha512-Vo1ab+QXPzZ4tCa8SwIHJFaSzy4R6SHf7BY79rFBDf0idraZWAkYrDjDj8uWaSm3S2TK+hJ7/t1CEmZ7jXw+pg==
+
+json-schema@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/json-schema/-/json-schema-0.4.0.tgz"
+  integrity sha512-es94M3nTIfsEPisRafak+HDLfHXnKBhV3vU5eqPcS3flIWqcxJWgXHXiey3YrpaNsanY5ei1VoYEbOzijuq9BA==
+
 sqlstring@^2.3.3:
   version "2.3.3"
   resolved "https://registry.npmjs.org/sqlstring/-/sqlstring-2.3.3.tgz"
@@ -21,3 +89,8 @@ validator@^13.15.15:
   version "13.15.15"
   resolved "https://registry.npmjs.org/validator/-/validator-13.15.15.tgz"
   integrity sha512-BgWVbCI72aIQy937xbawcs+hrVaN/CZ2UwutgaJ36hGqRrLNM+f5LUT/YPRbo8IV/ASeFzXszezV+y2+rq3l8A==
+
+"zod@^3.25.76 || ^4.1.8", zod@^4.1.13:
+  version "4.1.13"
+  resolved "https://registry.npmjs.org/zod/-/zod-4.1.13.tgz"
+  integrity sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==
